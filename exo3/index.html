@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label>Utilisateur</label>
+        <input type="text" required />
+        <label>Mot de pass</label>
+        <input type="password" id="psw" required />
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
+    <div id="message">
+        <h3>LE mot de passe doit contenir les elements suivants :</h3>
+        <p id="letter" class="invalid">Une lettre minuscule</p>
+        <p id="capital" class="invalid">Une lettre majuscule</p>
+        <p id="number" class="invalid">Un chiffre</p>
+        <p id="length" class="invalid">Au moins 8 caracteres</p>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
